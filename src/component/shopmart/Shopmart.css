@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.filt{
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /* background-color: white; */
+}
+.allstock, .only-instock{
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border: white;
+    border-radius: 5px;
+
+}
+.card{
+    max-width: 80%;
+    margin: auto;
+    border: 1px solid rgb(231, 231, 231);
+    box-shadow: rgb(83, 83, 83) 0px 1px 4px ;
+    padding: 10px;
+    background-color: white;
+    /* margin-top:30px; */
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.tag{
+    /* padding: 5px; */
+    width: 10%;
+    text-align: center;
+    padding: 2.5px;
+    border-radius: 5px;
+    background-color: purple;
+    color: white;
+    
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.instock{
+    padding: 5px;
+    background-color: green;
+    border-radius: 5px;
+    color: white;
+}
+.unavailable{
+    padding: 5px;
+    background-color: red;
+    border-radius: 5px;
+    color: white;
+}

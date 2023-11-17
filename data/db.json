@@ -1,0 +1,64 @@
+{
+    "products":[
+        {
+        "id":1,
+        "name":"Micolor 8 Colour Eye Shawdow",
+        "price":2700,
+        "in_stock":false
+    },
+    {
+        "id":2,
+        "name":"Mascara Eye Liner",
+        "price":1800,
+        "in_stock":true
+    },
+    {
+        "id":3,
+        "name":"2-1 Moniza",
+        "price":3000,
+        "in_stock":false
+    },
+    {
+        "id":4,
+        "name":"Black Opal Eyeshadow",
+        "price":3000,
+        "in_stock":true
+    },
+    {
+        "id":5,
+        "name":"Green Tea Compact Powder",
+        "price":4500,
+        "in_stock":false
+    },
+    {
+        "id":6,
+        "name":"Sacha Buttercup",
+        "price":5500,
+        "in_stock":true
+    },
+    {
+        "id":7,
+        "name":"La Girls",
+        "price":10500,
+        "in_stock":false
+    },
+    {
+        "id":8,
+        "name":"Youthful Wear Spotless",
+        "price":5000,
+        "in_stock":false
+    },
+    {
+        "id":9,
+        "name":"Face It",
+        "price":13500,
+        "in_stock":true
+    },
+    {
+        "id":10,
+        "name":"Sacha Buttercup",
+        "price":9500,
+        "in_stock":true
+    }
+]
+}

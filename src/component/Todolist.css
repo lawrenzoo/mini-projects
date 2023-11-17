@@ -1,0 +1,147 @@
+.themesbody{
+    border: 1px solid rgb(87, 85, 85) ;
+    width: 85%;
+    background-color: blue;
+    margin:0 auto;
+    min-height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.themeselector>span{
+    border: 1px solid #dfdfdf;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display:inline-block;
+    cursor: pointer;
+    margin-left: 5px;
+
+}
+.themeselector .activethemes{
+    width: 40px;
+    height: 40px;
+}
+.white{
+    background-color: whitesmoke;
+    transition: all 500ms;
+}
+.ash{
+    background-color: rgb(208, 203, 203);
+    transition: all 500ms;
+}
+.randomOne{
+    background-color: rgb(243, 236, 159);
+    transition: all 500ms;
+}
+.randomTwo{
+    background-color: rgb(28, 249, 131);
+    transition: all 500ms;
+}
+.todolisttwo{
+    text-align: center;
+    margin-bottom: 5px;
+}
+.form-add{
+    border: 1px solid #dfdfdf;
+    background-color: white;
+    display: flex;
+    max-width: 350px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.form-add>.input-add{
+    padding: 7px;
+    border: 1px solid #dfdfdf;
+    outline-color: gold;
+}
+.addbtn, .updatebtn{
+    background-color: green;
+    border: 1px solid #dfdfdf;
+    border-radius: 5px;
+    outline:none;
+    padding: 7px;
+    color: white;
+    cursor: pointer;
+}
+.show-body{
+    width: 85%; 
+    margin: 0 auto;
+    background-color: white;
+    border: 1px solid #dfdfdf;
+    border-radius: 5px;
+    padding: 10px;
+}
+.show-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(87, 85, 85);
+}
+.todo-name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.todo-name>p{
+    background-color: #dfdfdf;
+    color: rgb(87, 85, 85);
+    border-radius:10px ;
+    padding: 3px;
+    text-align: center;
+}
+.clearbtn{
+    padding: 5px;
+    color: white;
+    background-color: blue;
+    border: 1px solid #dfdfdf;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.grid-show {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px;
+    gap: 15px;
+  }
+  .grid-item {
+    background-color:white;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding:15px 10px ;
+    border-left: 5px solid blue;
+    border-radius: 7px;
+  }
+  .show-tasklist{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .task-content{
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .grid-item>p{
+    font-size:12px;
+    color: #7e7c7c;
+  }
+
+@media(max-width:1200px){
+    .grid-show {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 20px;
+        gap: 15px;
+      }
+}
