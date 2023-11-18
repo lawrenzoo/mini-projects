@@ -1,10 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../component/Todolist.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrash, faEdit } from '@fortawesome/free-solid-svg-icons';
 
 
 const Showtask = ({addshow,setAddshow,taskupdate,setTaskupdate}) => {
+
+  const [overflow, setOverflow]= useState({})
+  function handleToggle(id) {
+    setOverflow((prevState) => ({
+      ...prevState,
+      [id]: !prevState[id],
+    }));
+  }
   // const taskitems =[
   //   {id:1, name:'task1', time:'1:59:13AM 9/14/2022'},
   //   {id:2, name:'task2', time:'2:59:13AM 10/14/2022'},
@@ -42,10 +50,10 @@ const Showtask = ({addshow,setAddshow,taskupdate,setTaskupdate}) => {
               addshow.map((todo)=>(
                 <div className="grid-item" key={todo.id}>
                       <div className="show-tasklist">
-                        <div className="task-content">{todo.name}</div>
+                        <div onClick={() => handleToggle(todo.id)}className={`task-content ${overflow[todo.id] ? 'active' : ''}`}>{todo.name}</div>
                         <div className="task-icon">
-                          <FontAwesomeIcon onClick={()=>handleEdit(todo.id)} icon={faEdit} style={{ color: 'red', fontSize: '22px', cursor:'pointer' }}/>
-                          <FontAwesomeIcon onClick={()=>handleDelete(todo.id)} icon={faTrash} style={{ color: 'blue', fontSize: '22px', marginLeft:'5px', cursor:'pointer'}}/>
+                          <FontAwesomeIcon onClick={()=>handleEdit(todo.id)} icon={faEdit} style={{ color: 'red', fontSize: '20px', cursor:'pointer' }}/>
+                          <FontAwesomeIcon onClick={()=>handleDelete(todo.id)} icon={faTrash} style={{ color: 'blue', fontSize: '20px', marginLeft:'5px', cursor:'pointer'}}/>
                         </div>
                       </div>
                       <p>{todo.time}</p>

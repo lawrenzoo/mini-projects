@@ -42,7 +42,7 @@ const Addtask = ({addshow,setAddshow,taskupdate,setTaskupdate}) => {
   
   return (
     <form className='form-add' onSubmit={handleSubmit} >
-      <input name='addtask' value={taskupdate.name || ""} className='input-add' type="text" placeholder='add task' autoComplete='off' maxLength={23} onChange={(e)=>setTaskupdate({...taskupdate, name:e.target.value})}/>
+      <input name='addtask' value={taskupdate.name || ""} className='input-add' type="text" placeholder='add task' autoComplete='off'  onChange={(e)=>setTaskupdate({...taskupdate, name:e.target.value})}/>
       <button className='addbtn' type='submit'>{taskupdate.id? "Update":"Add"}</button>
       
     </form>
